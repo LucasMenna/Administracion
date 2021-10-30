@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReglasDeNegocios
 {
-    class ClsVendedor : ClsPersona 
+    class ClsVendedor : ClsEmpleados 
     {
 
         private decimal _comision;

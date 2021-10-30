@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ReglasDeNegocios
 {
-    class ClsEmpleado : ClsPersona
+    class ClsEmpleado : ClsEmpleados
     {
-
+       
         //SOBREESCRIBO EL METODO DE LA CLASE BASE
         public override decimal calcularSalario()
         {

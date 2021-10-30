@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administracion.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace ReglasDeNegocios
 {
-    abstract class ClsPersona
+    abstract class ClsEmpleados : IEmpleados
     {
 
         private string _nombre;
         private decimal _salario;
 
-        public string nombre { 
-            get {return _nombre; } 
-            set { _nombre = value;}
+        public string nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; }
         }
 
         public decimal salario
@@ -23,7 +25,7 @@ namespace ReglasDeNegocios
             set { _salario = value; }
         }
 
-        public virtual decimal calcularSalario()
+         public virtual decimal calcularSalario()
         {
             return 0;
         }
